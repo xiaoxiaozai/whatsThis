@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		236A098EC674142446F46703 /* Pods_whatsThis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E8A3BAB2CE53546328BFAC /* Pods_whatsThis.framework */; };
+		8B84062E1FF372F300AB6F3D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B84062D1FF372F300AB6F3D /* MainViewController.m */; };
+		8B8406321FF3738C00AB6F3D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406311FF3738C00AB6F3D /* BaseViewController.m */; };
 		8BECD8EB1FE3582900A7D1CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BECD8EA1FE3582900A7D1CF /* AppDelegate.m */; };
-		8BECD8EE1FE3582900A7D1CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BECD8ED1FE3582900A7D1CF /* ViewController.m */; };
 		8BECD8F31FE3582900A7D1CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BECD8F21FE3582900A7D1CF /* Assets.xcassets */; };
 		8BECD8F91FE3582900A7D1CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BECD8F81FE3582900A7D1CF /* main.m */; };
 /* End PBXBuildFile section */
@@ -17,11 +18,13 @@
 /* Begin PBXFileReference section */
 		13161A5F752070EA717623A3 /* Pods-whatsThis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsThis.release.xcconfig"; path = "Pods/Target Support Files/Pods-whatsThis/Pods-whatsThis.release.xcconfig"; sourceTree = "<group>"; };
 		13A3E397A2B8811C51B1CA0E /* Pods-whatsThis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsThis.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whatsThis/Pods-whatsThis.debug.xcconfig"; sourceTree = "<group>"; };
+		8B84062C1FF372F300AB6F3D /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		8B84062D1FF372F300AB6F3D /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		8B8406301FF3738C00AB6F3D /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		8B8406311FF3738C00AB6F3D /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		8BECD8E61FE3582800A7D1CF /* whatsThis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatsThis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BECD8E91FE3582900A7D1CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8BECD8EA1FE3582900A7D1CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8BECD8EC1FE3582900A7D1CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8BECD8ED1FE3582900A7D1CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8BECD8F21FE3582900A7D1CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BECD8F71FE3582900A7D1CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BECD8F81FE3582900A7D1CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -57,6 +60,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8B84062A1FF372C900AB6F3D /* 主页面 */ = {
+			isa = PBXGroup;
+			children = (
+				8B84062B1FF372E900AB6F3D /* ViewController */,
+			);
+			path = "主页面";
+			sourceTree = "<group>";
+		};
+		8B84062B1FF372E900AB6F3D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8B84062C1FF372F300AB6F3D /* MainViewController.h */,
+				8B84062D1FF372F300AB6F3D /* MainViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8B84062F1FF3737F00AB6F3D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8B8406301FF3738C00AB6F3D /* BaseViewController.h */,
+				8B8406311FF3738C00AB6F3D /* BaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		8BECD8DD1FE3582800A7D1CF = {
 			isa = PBXGroup;
 			children = (
@@ -78,10 +107,10 @@
 		8BECD8E81FE3582800A7D1CF /* whatsThis */ = {
 			isa = PBXGroup;
 			children = (
+				8B84062F1FF3737F00AB6F3D /* Base */,
+				8B84062A1FF372C900AB6F3D /* 主页面 */,
 				8BECD8E91FE3582900A7D1CF /* AppDelegate.h */,
 				8BECD8EA1FE3582900A7D1CF /* AppDelegate.m */,
-				8BECD8EC1FE3582900A7D1CF /* ViewController.h */,
-				8BECD8ED1FE3582900A7D1CF /* ViewController.m */,
 				8BECD8F21FE3582900A7D1CF /* Assets.xcassets */,
 				8BECD8F71FE3582900A7D1CF /* Info.plist */,
 				8BECD8F81FE3582900A7D1CF /* main.m */,
@@ -209,9 +238,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BECD8EE1FE3582900A7D1CF /* ViewController.m in Sources */,
 				8BECD8F91FE3582900A7D1CF /* main.m in Sources */,
+				8B8406321FF3738C00AB6F3D /* BaseViewController.m in Sources */,
 				8BECD8EB1FE3582900A7D1CF /* AppDelegate.m in Sources */,
+				8B84062E1FF372F300AB6F3D /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
