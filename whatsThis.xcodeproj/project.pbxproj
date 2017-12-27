@@ -11,6 +11,7 @@
 		8B84062E1FF372F300AB6F3D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B84062D1FF372F300AB6F3D /* MainViewController.m */; };
 		8B8406321FF3738C00AB6F3D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406311FF3738C00AB6F3D /* BaseViewController.m */; };
 		8B8406371FF3769100AB6F3D /* LeftScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406361FF3769100AB6F3D /* LeftScrollView.m */; };
+		8B9E30F01FF3866000E8785A /* AppFrameTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E30EF1FF3866000E8785A /* AppFrameTabBarViewController.m */; };
 		8BECD8EB1FE3582900A7D1CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BECD8EA1FE3582900A7D1CF /* AppDelegate.m */; };
 		8BECD8F31FE3582900A7D1CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BECD8F21FE3582900A7D1CF /* Assets.xcassets */; };
 		8BECD8F91FE3582900A7D1CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BECD8F81FE3582900A7D1CF /* main.m */; };
@@ -26,6 +27,8 @@
 		8B8406331FF374E800AB6F3D /* whatsThis.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = whatsThis.pch; sourceTree = "<group>"; };
 		8B8406351FF3769100AB6F3D /* LeftScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftScrollView.h; sourceTree = "<group>"; };
 		8B8406361FF3769100AB6F3D /* LeftScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftScrollView.m; sourceTree = "<group>"; };
+		8B9E30EE1FF3866000E8785A /* AppFrameTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppFrameTabBarViewController.h; sourceTree = "<group>"; };
+		8B9E30EF1FF3866000E8785A /* AppFrameTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppFrameTabBarViewController.m; sourceTree = "<group>"; };
 		8BECD8E61FE3582800A7D1CF /* whatsThis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatsThis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BECD8E91FE3582900A7D1CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8BECD8EA1FE3582900A7D1CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,6 +103,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8B9E30ED1FF3865700E8785A /* AppFrame */ = {
+			isa = PBXGroup;
+			children = (
+				8B9E30EE1FF3866000E8785A /* AppFrameTabBarViewController.h */,
+				8B9E30EF1FF3866000E8785A /* AppFrameTabBarViewController.m */,
+			);
+			path = AppFrame;
+			sourceTree = "<group>";
+		};
 		8BECD8DD1FE3582800A7D1CF = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +133,7 @@
 		8BECD8E81FE3582800A7D1CF /* whatsThis */ = {
 			isa = PBXGroup;
 			children = (
+				8B9E30ED1FF3865700E8785A /* AppFrame */,
 				8B84062F1FF3737F00AB6F3D /* Base */,
 				8B84062A1FF372C900AB6F3D /* 主页面 */,
 				8BECD8E91FE3582900A7D1CF /* AppDelegate.h */,
@@ -257,6 +270,7 @@
 				8B8406321FF3738C00AB6F3D /* BaseViewController.m in Sources */,
 				8B8406371FF3769100AB6F3D /* LeftScrollView.m in Sources */,
 				8BECD8EB1FE3582900A7D1CF /* AppDelegate.m in Sources */,
+				8B9E30F01FF3866000E8785A /* AppFrameTabBarViewController.m in Sources */,
 				8B84062E1FF372F300AB6F3D /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

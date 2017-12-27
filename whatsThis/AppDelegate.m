@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AppFrameTabBarViewController.h"
 #import "MainViewController.h"
 
 @interface AppDelegate ()
@@ -20,9 +21,10 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    MainViewController* controller = [[MainViewController alloc]init];
+//    AppFrameTabBarViewController *mainViewController = [[AppFrameTabBarViewController alloc]init];
+    MainViewController *mainViewController = [[MainViewController alloc]init];
     
-    self.window.rootViewController = controller;
+    self.window.rootViewController = mainViewController;
     
     [self.window makeKeyAndVisible];
     
