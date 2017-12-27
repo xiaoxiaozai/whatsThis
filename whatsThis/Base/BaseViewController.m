@@ -17,7 +17,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    self.view.backgroundColor = RGB(241, 242, 243);
+    
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+    self.navigationController.interactivePopGestureRecognizer.delegate = self;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleDefault;
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSLog(@"current ViewController >>>>>>>>>> %@",[self class]);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,14 +40,29 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+/**
+ *  添加返回按钮
+ */
+- (void)addBackBtn{
+    //返回按钮
+    UIButton* backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    backBtn.backgroundColor = [UIColor clearColor];
+    backBtn.frame = CGRectMake(0, 5, 30, 30);
+    [backBtn setImage:[UIImage imageNamed:@"common_back"] forState:UIControlStateNormal];
+    [backBtn setImage:[UIImage imageNamed:@"common_back"] forState:UIControlStateHighlighted];
+    [backBtn addTarget:self action:@selector(navBack)
+      forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem* leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+    self.navigationItem.leftBarButtonItem = leftBarButtonItem;
 }
-*/
+
+/**
+ *  自定义返回
+ */
+- (void)navBack {
+    [SVProgressHUD dismiss];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 @end

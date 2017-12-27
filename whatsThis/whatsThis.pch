@@ -1,0 +1,67 @@
+//
+//  whatsThis.pch
+//  whatsThis
+//
+//  Created by 翟宇 on 2017/12/27.
+//  Copyright © 2017年 翟宇. All rights reserved.
+//
+
+#ifndef whatsThis_pch
+#define whatsThis_pch
+
+/******************************常用快捷*********************************/
+//4s高度
+#define IOS4  480==([[UIScreen mainScreen] bounds].size.height)
+//5s高度
+#define IOS5  568==([[UIScreen mainScreen] bounds].size.height)
+//6s高度
+#define IOS6  667==([[UIScreen mainScreen] bounds].size.height)
+//6P高度
+#define IOS6P  736==([[UIScreen mainScreen] bounds].size.height)
+//颜色
+#define RGB(r,g,b) [UIColor colorWithRed:r/255.f green:g/255.f blue:b/255.f alpha:1.f]
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define UIColorFromRGBA(rgbValue,alphaValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:alphaValue]
+//ios版本
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+//当前版本号
+#define CURRENVERSION [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]
+//屏幕宽高
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+//字体大小
+#define FONT(x) [UIFont systemFontOfSize:x]
+//图片
+#define IMG(x) [UIImage imageNamed:x]
+//pageCount 分页页面显示数量
+#define PAGE_COUNT 20
+//文件目录
+#define SECTION_PLIST_PATH [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"sectionArr.plist"]
+#define KEY_PLIST_PATH [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"keys.list"]
+/******************************常用颜色**********************************/
+#define BLACK_COLOR  RGB(99, 99, 99)
+#define RED_COLOR    UIColorFromRGB(0xe82e5d)
+#define GREEN_COLOR  UIColorFromRGB(0x64c1b6)
+#define ORANGE_COLOR UIColorFromRGB(0xF8831C)
+#define BLUE_COLOR   UIColorFromRGB(0x58BED5)
+/******************************第三方调用列表*****************************/
+#import "UIImageView+WebCache.h"
+#import "MJRefresh.h"
+#import "SVProgressHUD.h"
+#import "AFNetworking.h"
+#import "AppDelegate.h"
+#import "Masonry.h"
+#import "IQKeyboardManager.h"
+//base系列
+#import "BaseViewController.h"
+
+/******************************接口*************************************/
+#define HTTP_SERVER @"http://jlgst.jlhighway.com/etcApp/app/"
+
+#define HTTP(x) [HTTP_SERVER stringByAppendingString:x]                       //API_URL
+
+/* 登录相关 */
+#define HTTP_LOGIN               HTTP(@"account/login.json")                       //登陆
+#endif /* whatsThis_pch */

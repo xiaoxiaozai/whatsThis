@@ -22,6 +22,7 @@
 		8B84062D1FF372F300AB6F3D /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		8B8406301FF3738C00AB6F3D /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		8B8406311FF3738C00AB6F3D /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		8B8406331FF374E800AB6F3D /* whatsThis.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = whatsThis.pch; sourceTree = "<group>"; };
 		8BECD8E61FE3582800A7D1CF /* whatsThis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatsThis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BECD8E91FE3582900A7D1CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8BECD8EA1FE3582900A7D1CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -114,6 +115,7 @@
 				8BECD8F21FE3582900A7D1CF /* Assets.xcassets */,
 				8BECD8F71FE3582900A7D1CF /* Info.plist */,
 				8BECD8F81FE3582900A7D1CF /* main.m */,
+				8B8406331FF374E800AB6F3D /* whatsThis.pch */,
 			);
 			path = whatsThis;
 			sourceTree = "<group>";
@@ -360,6 +362,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Y3BCD52DD;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/whatsThis/whatsThis.pch";
 				INFOPLIST_FILE = whatsThis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -377,6 +380,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Y3BCD52DD;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/whatsThis/whatsThis.pch";
 				INFOPLIST_FILE = whatsThis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
