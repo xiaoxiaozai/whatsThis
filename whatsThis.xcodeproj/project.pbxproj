@@ -10,6 +10,7 @@
 		236A098EC674142446F46703 /* Pods_whatsThis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E8A3BAB2CE53546328BFAC /* Pods_whatsThis.framework */; };
 		8B84062E1FF372F300AB6F3D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B84062D1FF372F300AB6F3D /* MainViewController.m */; };
 		8B8406321FF3738C00AB6F3D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406311FF3738C00AB6F3D /* BaseViewController.m */; };
+		8B8406371FF3769100AB6F3D /* LeftScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406361FF3769100AB6F3D /* LeftScrollView.m */; };
 		8BECD8EB1FE3582900A7D1CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BECD8EA1FE3582900A7D1CF /* AppDelegate.m */; };
 		8BECD8F31FE3582900A7D1CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BECD8F21FE3582900A7D1CF /* Assets.xcassets */; };
 		8BECD8F91FE3582900A7D1CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BECD8F81FE3582900A7D1CF /* main.m */; };
@@ -23,6 +24,8 @@
 		8B8406301FF3738C00AB6F3D /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		8B8406311FF3738C00AB6F3D /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		8B8406331FF374E800AB6F3D /* whatsThis.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = whatsThis.pch; sourceTree = "<group>"; };
+		8B8406351FF3769100AB6F3D /* LeftScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftScrollView.h; sourceTree = "<group>"; };
+		8B8406361FF3769100AB6F3D /* LeftScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftScrollView.m; sourceTree = "<group>"; };
 		8BECD8E61FE3582800A7D1CF /* whatsThis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatsThis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BECD8E91FE3582900A7D1CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8BECD8EA1FE3582900A7D1CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,6 +67,7 @@
 		8B84062A1FF372C900AB6F3D /* 主页面 */ = {
 			isa = PBXGroup;
 			children = (
+				8B8406341FF3768100AB6F3D /* View */,
 				8B84062B1FF372E900AB6F3D /* ViewController */,
 			);
 			path = "主页面";
@@ -85,6 +89,15 @@
 				8B8406311FF3738C00AB6F3D /* BaseViewController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		8B8406341FF3768100AB6F3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B8406351FF3769100AB6F3D /* LeftScrollView.h */,
+				8B8406361FF3769100AB6F3D /* LeftScrollView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		8BECD8DD1FE3582800A7D1CF = {
@@ -242,6 +255,7 @@
 			files = (
 				8BECD8F91FE3582900A7D1CF /* main.m in Sources */,
 				8B8406321FF3738C00AB6F3D /* BaseViewController.m in Sources */,
+				8B8406371FF3769100AB6F3D /* LeftScrollView.m in Sources */,
 				8BECD8EB1FE3582900A7D1CF /* AppDelegate.m in Sources */,
 				8B84062E1FF372F300AB6F3D /* MainViewController.m in Sources */,
 			);
