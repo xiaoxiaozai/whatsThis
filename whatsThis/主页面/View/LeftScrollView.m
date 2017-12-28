@@ -14,7 +14,7 @@
     if(self = [super init]) {
         self.layer.borderWidth = 1;
         self.layer.borderColor = BLACK_COLOR.CGColor;
-        self.frame = CGRectMake(-SCREEN_WIDTH * 0.6 - 10, -1, SCREEN_WIDTH * 0.6, SCREEN_HEIGHT + 2);
+        self.frame = CGRectMake(-SCREEN_WIDTH * 0.618 - 10, -1, SCREEN_WIDTH * 0.618, SCREEN_HEIGHT + 2);
         self.backgroundColor = [UIColor whiteColor];
         
         self.layer.shadowColor = BLACK_COLOR.CGColor;//阴影颜色
@@ -32,7 +32,7 @@
 }
 - (void) moveToLeft {
     [UIView animateWithDuration:0.5 animations:^{
-        self.frame = CGRectMake(-SCREEN_WIDTH * 0.6 - 10, self.frame.origin.y,self.frame.size.width, self.frame.size.height);
+        self.frame = CGRectMake(-SCREEN_WIDTH * 0.618 - 10, self.frame.origin.y,self.frame.size.width, self.frame.size.height);
     }];
 }
 
